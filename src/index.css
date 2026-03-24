@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 25% 8%;
+    --foreground: 0 0% 98%;
+    --card: 220 20% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 210 100% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 260 60% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 187 85% 43%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 20%;
+    --input: 220 15% 18%;
+    --ring: 210 100% 56%;
+    --radius: 0.75rem;
+    
+    --science-blue: 210 100% 56%;
+    --science-purple: 260 60% 55%;
+    --science-cyan: 187 85% 43%;
+    --science-dark: 220 25% 8%;
+    --science-darker: 220 30% 5%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Poppins', 'Cairo', sans-serif;
+  }
+}
+
+/* Arabic font handling */
+[dir="rtl"] body,
+[dir="rtl"] * {
+  font-family: 'Cairo', 'Poppins', sans-serif;
+}
+
+[dir="ltr"] body,
+[dir="ltr"] * {
+  font-family: 'Poppins', 'Cairo', sans-serif;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--science-blue)) 0%, hsl(var(--science-purple)) 50%, hsl(var(--science-cyan)) 100%);
+  }
+  
+  .bg-gradient-science {
+    background: linear-gradient(135deg, hsl(var(--science-dark)) 0%, hsl(220 30% 12%) 50%, hsl(var(--science-darker)) 100%);
+  }
+  
+  .bg-gradient-hero {
+    background: radial-gradient(ellipse at top, hsl(210 100% 20% / 0.3) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom right, hsl(260 60% 30% / 0.2) 0%, transparent 40%),
+                linear-gradient(180deg, hsl(var(--science-dark)) 0%, hsl(220 30% 5%) 100%);
+  }
+  
+  .glow-blue {
+    box-shadow: 0 0 40px hsl(210 100% 56% / 0.3), 0 0 80px hsl(210 100% 56% / 0.1);
+  }
+  
+  .glow-purple {
+    box-shadow: 0 0 40px hsl(260 60% 55% / 0.3), 0 0 80px hsl(260 60% 55% / 0.1);
+  }
+  
+  .glow-cyan {
+    box-shadow: 0 0 40px hsl(187 85% 43% / 0.3), 0 0 80px hsl(187 85% 43% / 0.1);
+  }
+  
+  .glass {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10;
+  }
+  
+  .glass-dark {
+    @apply backdrop-blur-xl bg-black/20 border border-white/5;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+  
+  .animate-gradient {
+    animation: gradient-shift 8s ease infinite;
+    background-size: 200% 200%;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--science-dark));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--science-blue) / 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--science-blue) / 0.7);
+}
+
+/* Selection styling */
+::selection {
+  background: hsl(var(--science-blue) / 0.3);
+  color: white;
+}
+
+/* RTL Support */
+[dir="rtl"] .animate-slide-in-right {
+  animation: slide-in-left 0.8s ease-out forwards;
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Loading animation */
+@keyframes loading {
+  0% { width: 0%; margin-left: 0%; }
+  50% { width: 100%; marginLeft: 0%; }
+  100% { width: 0%; marginLeft: 100%; }
+}
+
+/* Enhanced hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Glow text effect */
+.glow-text {
+  text-shadow: 0 0 20px hsl(var(--science-blue) / 0.5),
+               0 0 40px hsl(var(--science-purple) / 0.3);
+}
+
+/* Shimmer effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Magnetic button effect placeholder */
+.magnetic-btn {
+  transition: transform 0.2s ease-out;
+}
+
+/* Card tilt effect */
+.card-tilt {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+/* Border gradient */
+.border-gradient {
+  position: relative;
+  background: linear-gradient(var(--science-dark), var(--science-dark)) padding-box,
+              linear-gradient(135deg, hsl(var(--science-blue)), hsl(var(--science-purple)), hsl(var(--science-cyan))) border-box;
+  border: 2px solid transparent;
+}
+
+/* Smooth scale transition */
+.scale-hover {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.scale-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}

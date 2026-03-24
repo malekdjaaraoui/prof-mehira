@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "groups": "Groupes",
+    "program": "Programme",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "BAC 2026 - Sciences Naturelles",
+    "title": "Professeur",
+    "subtitle": "Sciences Naturelles",
+    "description": "Votre guide vers la réussite au BAC 2026. Des cours complets, un suivi personnalisé et une méthodologie éprouvée pour exceller en sciences naturelles.",
+    "ctaProgram": "Voir le Programme",
+    "ctaContact": "Nous Contacter",
+    "socialTitle": "Suivez-nous sur les réseaux",
+    "stats": {
+      "students": "Élèves",
+      "success": "Réussite",
+      "experience": "Ans d'exp."
+    }
+  },
+  "groups": {
+    "badge": "Nos Groupes",
+    "title": "Groupes de",
+    "titleHighlight": "Cours",
+    "description": "Choisissez le groupe qui vous convient selon votre emplacement et vos disponibilités. Chaque groupe bénéficie d'un suivi personnalisé.",
+    "scheduleTitle": "Horaires Flexibles",
+    "scheduleDesc": "Plusieurs créneaux horaires disponibles pour s'adapter à votre emploi du temps. Contactez-nous pour plus d'informations sur les inscriptions.",
+    "stats": {
+      "activeGroups": "Groupes Actifs",
+      "sessionsPerWeek": "Sessions/Semaine",
+      "locations": "Locations",
+      "studentsPerGroup": "Élèves/Groupe"
+    }
+  },
+  "program": {
+    "badge": "Programme Actuel",
+    "title": "Programme de",
+    "titleHighlight": "cette période",
+    "description": "Consultez notre programme détaillé pour les vacances. Deux semaines intensives de révision pour préparer le BAC 2026.",
+    "infoCards": {
+      "schedule": {
+        "title": "Horaires Détaillés",
+        "desc": "Chaque séance est planifiée avec précision pour optimiser votre temps de révision."
+      },
+      "content": {
+        "title": "Contenu Complet",
+        "desc": "Tous les chapitres du programme BAC 2026 sont couverts avec des exercices pratiques."
+      },
+      "bac": {
+        "title": "Préparation BAC",
+        "desc": "Méthodologie et stratégies pour réussir l'examen du BAC Sciences Naturelles."
+      }
+    },
+    "cta": "Des questions sur le programme ?",
+    "ctaButton": "Contactez-Nous"
+  },
+  "about": {
+    "badge": "À Propos",
+    "title": "Le",
+    "titleHighlight": "Professeur",
+    "subtitle": "Passionné par les sciences et dévoué à la réussite de ses élèves",
+    "approachTitle": "Une Approche Pédagogique Unique",
+    "approachDesc": "Le Professeur Mehira combine expertise scientifique et passion pour l'enseignement pour offrir une expérience d'apprentissage exceptionnelle. Sa méthode repose sur la compréhension profonde des concepts plutôt que sur l'apprentissage par cœur.",
+    "credentials": {
+      "title": "Professeur de Sciences de la Nature et de la Vie",
+      "school": "Lycée: Zaezae / Joy School",
+      "location": "Oran",
+      "graduate": "Diplômé de l'École Normale Supérieure Kouba",
+      "corrector": "Correcteur du BAC"
+    },
+    "teachingPoints": [
+      "Méthodologie pédagogique moderne et interactive",
+      "Suivi personnalisé de chaque élève",
+      "Support de cours complet et exercices pratiques",
+      "Préparation ciblée aux examens du BAC",
+      "Groupes restreints pour une meilleure attention",
+      "Disponibilité pour questions et clarifications"
+    ],
+    "testimonialsTitle": "Ce que disent nos",
+    "testimonialsHighlight": "élèves",
+    "stats": {
+      "experience": "Années d'Expérience",
+      "students": "Élèves Formés",
+      "success": "Taux de Réussite",
+      "courses": "Cours Créés"
+    }
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Restons en",
+    "titleHighlight": "Contact",
+    "description": "Une question ? Besoin d'informations ? N'hésitez pas à nous contacter par téléphone ou sur nos réseaux sociaux.",
+    "form": {
+      "title": "Envoyez-nous un message",
+      "successTitle": "Message Envoyé !",
+      "successDesc": "Nous vous répondrons dans les plus brefs délais.",
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "phone": "Téléphone",
+      "phonePlaceholder": "Votre numéro",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Votre message...",
+      "submit": "Envoyer le Message",
+      "sending": "Envoi en cours..."
+    },
+    "quickContact": {
+      "title": "Contact Rapide",
+      "desc": "Pour une réponse rapide, contactez-nous directement sur WhatsApp.",
+      "button": "Discuter sur WhatsApp"
+    },
+    "locations": {
+      "title": "Nos Locations"
+    }
+  },
+  "footer": {
+    "description": "Votre partenaire de réussite pour le BAC 2026 en Sciences Naturelles. Des cours de qualité, un suivi personnalisé et une méthodologie éprouvée.",
+    "quickLinks": "Liens Rapides",
+    "contact": "Contact",
+    "copyright": "© 2026 Professeur Mehira. Tous droits réservés.",
+    "madeWith": "Fait avec",
+    "forStudents": "pour la réussite de nos élèves"
+  },
+  "language": {
+    "ar": "العربية",
+    "fr": "Français"
+  }
+}
